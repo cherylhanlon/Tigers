@@ -1,0 +1,13 @@
+﻿/* IE7 Stylesheet */
+
+body {}
+
+.logo {margin: 0 0 0 400px; /* IE6&7 Fix */ }
+
+/* Fonts */
+
+h1 {padding: 55px 0 0 40px; }
+
+#extras {margin: 10px 0 0;}
+
+.tigerTweet {padding: 20px 40px 10px;}

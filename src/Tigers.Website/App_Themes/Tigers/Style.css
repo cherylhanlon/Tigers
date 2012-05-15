@@ -1,0 +1,484 @@
+@import url(../../Content/Css/Layout.css);
+@import url(../../Content/Css/Application.css);
+/********* GLOBALS *********/
+	
+/* RESET ITEMS - Eric Meyer Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {line-height: 1; }
+ol, ul {list-style: none; }
+blockquote, q {quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+/* End of reset */
+
+/* colors */
+a {color: #f90; text-decoration:none; }
+a:hover, a:focus {color: #ff6700; text-decoration:underline; }
+a:visited {color: #f90;}
+
+/********* LAYOUT *********/
+
+body { margin:0; background: url(../../Content/Img/GymWood.jpg) repeat center top fixed; font-family: 'MyriadProCondensed','Segoe WP', sans-serif; font-weight: bold;}
+	#wrap { width:1000px; margin:0 auto; background: #fff; overflow: hidden; }
+		/* #header { height:100px; background:#ecac00; } */
+		#page { padding:15px 15px 6px 15px; background-color:#fff; }
+			img.top { width:100%; margin-bottom:15px; }
+			#content { 	width:960px; margin: 0 auto; padding: 0; }
+				img.main { width:100%; }
+				/* .secondary { width: 170px; } */
+				#menu { float:left; }
+				#extras { float:right; width: 300px; margin: 10px 0 0; padding: 0;}
+				#main { width:610px; padding: 10px 0 0 20px; float:left; padding-bottom:15px; }
+		#footer {clear: both; margin:0 auto; width: 1000px; padding: 50px 0 0;}
+			#footer .n2{color:#ECAC00;float:right;padding:0 15px;font-size:.8em;}
+
+
+/*box*/
+.boxTitle,
+.secondary h4 { background:#ecac00; margin:0; padding:8px 10px; color:#fff; }
+.secondary h4 a, .secondary h4 a:visited {color:#fff;}
+.secondary .box { background:#f0f0f0; _height:1px; padding-bottom:20px; width: 280px; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; }
+.secondary .box .inner { background:transparent; padding:10px 10px 0 10px;}
+
+/*top*/
+#header {margin: 0 auto; background: #000 url(../../Content/Img/headerSecondary2.jpg) no-repeat bottom left; padding: 0 0 70px 0; overflow: hidden;}
+#header .siteHeader { margin:0; /*padding:25px;*/ }
+#header .siteHeader a { color:#fff; }
+/* #header .siteLogo { float:right; padding:25px;} */
+
+.uc {margin:0; padding: 0;}
+
+/*secondary*/
+.secondary .uc { float: left; margin: 0 20px 60px 0;}
+#extras #menu .uc { float: left; margin: 40px 20px 0 0;}
+
+/* Styling of the logo */
+.logo {position: absolute; margin: 0 0 0 420px; text-align: center; z-index: 100; }
+
+/********* TOP NAVIGATION *********/
+.navigation {position: relative; margin: 0 auto; width: 960px; font-size: 1.25em; letter-spacing: .1em; }
+.topMenu {float: left; margin: 20px 0 0; padding: 0; background: #ff9800 url(../../Content/Img/navGradient.jpg) repeat-x top left; text-transform: uppercase; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+    .topMenu li {float: left; display: inline; line-height: 45px; text-align: center;}
+	.topMenu a {text-shadow: 0px 2px 2px #9d612b; display: block; color: #fff; text-decoration: none;}
+	.topMenu a:hover {background: url(../../Content/Img/navStripes.png) no-repeat top right; display: block;}
+
+/* .home { width: 40px; background: url(../../Content/Img/homeIcon.png) no-repeat center center; text-indent: -9999px;} */
+.home { width: 90px; }
+.about-us { width:105px; }
+li.news { width:70px; }
+.teams, .fixtures, .find-us, .links, .players { width: 100px; }
+.teams { width: 125px; }
+.events { width: 100px; margin: 0 0 0 160px; }
+.galleries { width:115px; }
+.links { width:90px; }
+
+.current {background-color: Transparent; padding: 0;}
+
+.subMenu{}
+    .subMenu {font-family: Arial, Helvetica, sans-serif;}
+	.subMenu a { display:block; padding:2px 0; _height:1px; color:#666; }
+	.subMenu a:hover {color: #000;}
+	.subMenu ul { margin:0 0 5px 15px; }
+	.subMenu li {padding: 3px 0; border-bottom: 1px dotted #fff; font-size: .9em; line-height: 125%;}
+	.subMenu .trail > a { color:#0096DB; }
+	.subMenu .current > a { color:#0096DB; font-weight:bold; }
+
+#menu .uc h4 {background: #ff9800 url(../../Content/Img/navGradient.jpg) repeat-x top left; padding: 10px; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; font-size: 1.4em;} 
+
+/* lists */
+.list .a0 { background: #f4f8ed; }
+.list { padding-bottom:6px; }
+.list .item { padding:5px; }
+
+/********* CRUMBTRAIL *********/
+.path { font-size: .65em; font-family: Arial, Helvetica, sans-serif;  margin-bottom:10px; font-weight: normal;color:#ff9900; }
+.path a {color:#ff9900;}
+.path .current { color:#999; }
+.path a.current:hover { cursor:default; text-decoration:none; }
+
+.galleryList .path {margin: -20px 0 10px;}
+.imageGallery .path {margin: -20px 0 5px 15px;}
+
+/* sitemap 
+#main ul { list-style:circle; margin-left:20px; }
+*/
+
+/* content */
+.introduction { font-size:1.1em; font-style:italic; }
+
+/* date */
+.date {color:#333; display:block; }
+
+/*columns*/
+.columns .left { float:left; width:300px; }
+.columns .right { float:right; width:300px; }
+
+/* login */
+.login .tb { width:130px; }
+.login .ff { margin-bottom:5px; }
+.register td { padding:0 5px 5px 0; }
+
+/********* GALLERY *********/
+.thumbnail { opacity:.4; }
+.thumbnail:hover, .selected { opacity:1; }
+#thumbnails {padding-bottom:10px;}
+#thumbnails .text { display:none; }
+.thumbnail {margin-bottom:10px;margin-right:5px;}
+
+.galleryList #page, .galleryList #wrap, .imageGallery #page, .imageGallery #wrap {background: #000;}
+.galleryList h4, .imageGallery h4 {color: #fff;}
+
+.galleryHome {margin: 0 0 20px 0;}
+.galleryHome h4 a {color: #fff;}
+.galleryHome .thumbnail {opacity: .7;}
+.galleryHome .thumbnail:hover, .galleryList .selected { opacity:1; }
+
+.galleryList #page, .galleryHome #page {margin: 0 0 0 20px;}
+
+
+/* comments */
+.commentList { border-top:solid 1px #D0CFCB; margin-top:10px;}
+
+
+/********* FONTS *********/
+h1, h2, h3, h4, h5, h6 {text-transform: uppercase; margin: 0 0 10px; font-weight: bold;}
+h1 {color: #ff9900; font-size: 2.25em; padding: 120px 0 0 40px; }
+h2 {color: #fff; font-size: 2.5em; }
+h3 {color: #ff9900; font-size: 2em; }
+h4 {color: #000; font-size: 1.75em; clear: both;}
+
+#extras h4 {color: #000; font-size: 1.75em; padding: 30px 0 10px; background: #fff;}
+
+p {font-family: Arial, Helvetica, sans-serif; font-weight: normal; line-height: 125%; font-size: .85em; padding: 0 0 10px 0;}
+
+.contrast {color: #fff; }
+.contrastOrange {color: #ff9900; }
+.contrastBlue {color: #02fefb; }
+.contrastBlack {color: #000; }
+
+#main h1, .content h2 {color: #ff9900; font-size: 2em; padding: 0;}
+.center {text-align: center; }
+
+address {font-family: Arial, Helvetica, sans-serif; font-style: normal; font-size: .9em; font-weight: normal; line-height: 125%;}
+
+/********* FIXTURES AND MATCHES HOME *********/
+.matchHeaderPast {float: left; color: #fff; text-transform: uppercase; width: 300px; padding: 0; margin: 20px 0 10px 40px;}
+.matchHeaderFuture {float: right; color: #fff; text-transform: uppercase; width: 300px; padding: 0; margin: 20px 15px 10px 15px;}
+.matchHeaderPast .info, .matchHeaderFuture .info {color: #fff; font-size: 1.375em;}
+.matchHeaderPast .opponent, .matchHeaderFuture .opponent {font-size: 1.625em;}
+.matchHeaderFuture .matchLink a {color: #fff;background: #02fefb;}
+.matchHeaderFuture .matchLink a:hover {color: #02fefb; background: #fff;}
+
+/********* Changing Home Page Image and Hiding Fixtures and Matches on pages *********/
+.galleryList .matchHeaderPast, .galleryList .matchHeaderFuture, .imageGallery .matchHeaderPast, .imageGallery .matchHeaderFuture {display: none;}
+.galleryList #header, .imageGallery #header {background: #000 url(../../Content/Img/headerhome2.jpg) no-repeat top left;}
+.startPage #header {background: #000 url(../../Content/Img/headerHome2.jpg) no-repeat bottom left;}
+.startPage .matchHeaderFuture {float: left;}
+.textPage #header {background: #000 url(../../Content/Img/headerSecondary2.jpg) no-repeat bottom left;}
+
+/********* FIXTURES AND MATCHES PAGE *********/
+.match {float: left; color: #fff; text-transform: uppercase; padding: 0 0 30px 0; margin: 0;}
+.match ul {padding: 0px; margin: 0; clear: both;}
+.match li {list-style-type: none; width: 100%;}
+.past {margin: 30px 0 0 0px;}
+.future {margin: 30px 0 0 0px; padding: 0; width: 100%;}
+.match .secondary {margin: 30px 0 0 0px;}
+.matchType {font-size: 1.125em;}
+.opponentSmall {color: #ff9900;font-size: 1.25em; text-transform: uppercase;}
+.opponent {color: #ff9900;font-size: 1.75em; text-transform: uppercase;}
+.opponent a {color: #ff9900;}
+.info {font-size: 1.5em; color: #000;}
+.infoSmall {font-size: 1.25em; color: #000;}
+.matchLink {font-size: .875em; margin: 15px 0 0; line-height: 30px;}
+.matchLink a {text-decoration: none; padding: 5px 20px;color: #fff;background: #ff9900; border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;}
+.matchLink a:hover {color: #fff;background: #02fefb;}
+.matchLink .future a {color: #000;background: #02fefb;}
+.matchLink .future a:hover {color: #02fefb;background: #fff;}
+.next {color: #02fefb;}
+.right {float: right;}
+
+.moreLink, .noMargin { display:block; position:relative; margin:30px 230px 0 0; height:30px; }
+.noMargin { margin:30px 0 0 0; }
+    .moreLink a, .noMargin a { font-family: 'MyriadProCondensed', sans-serif; font-weight: bold; color: #FF9900; }
+    .opponentSmall a { color: #FF9900; }
+
+
+/********* NEWS AND EVENTS *********/
+.title {margin: 0 0 10px; font-size: 1.5em; text-transform: uppercase;}
+.title a {color: #ff9900;}
+.title a:hover {}
+.pubDate {font-size: .7em;color: #666;}
+.gameDate {font-size: 1.5em; color: #000;  font-family: 'MyriadProCondensed', sans-serif; font-weight: bold;}
+.eventDate {font-size: 1.375em; color: #000;  font-family: 'MyriadProCondensed', sans-serif; font-weight: bold;}
+.shortDesc {font-weight: bold; font-style: italic;}
+
+
+/********* VIDEOS AND LINKS *********/
+.socialLinks {float: right; margin: 10px 0 0; padding: 20px; width: 220px; background: #ff9900; height:140px; }
+.socialLinks ul {margin: 10px;}
+.socialLinks li {padding: 8px 0; }
+.socialLinks a {text-transform: uppercase; color: #fff; text-decoration: none; }
+.socialLinks a:hover {color: #000;}
+a[href*="http://facebook.com"], a[href*="http://www.facebook.com"] {background: url(img/facebookIcon.jpg) no-repeat left center; padding: 0 0 0 30px; }
+a[href*="http://twitter.com"], a[href*="http://www.twitter.com"] {background: url(img/twitterIcon.jpg) no-repeat left center; padding: 0; }
+a[href*="http://newcastlenetball.com"], a[href*="http://www.newcastlenetball.com"] {background: url(img/newNetballIcon.jpg) no-repeat left center; padding: 0 0 0 30px; }
+.videoLink {float: left; margin: 10px 0 0; padding: 20px 20px 20px 40px; width: 200px; background: #02fefb; height: 140px; }
+.video {width: 480px; float: left; margin: -40px 0 30px; background: #fff; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-box-shadow: 0px 0px 10px #888; -webkit-box-shadow: 0px 0px 10px #888; box-shadow: 0px 0px 10px #888; }
+.video img {padding: 20px;}
+.more {margin: 20px 0 0; font-family: 'MyriadProCondensed', sans-serif; font-weight: bold; text-transform: uppercase;}
+.more a {text-decoration: none; font-weight: bold; padding: 5px 20px; color: #fff; background: #ff9900; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;}
+.more a:hover {background: #02fefb; }
+
+/********* PLAYER PROFILES *********/
+.playerList #main {width: 940px;}
+.playerCard {width: 260px; padding: 10px 20px; float: left;}
+.playerCard img {margin: 0 10px 0 0; border: 4px solid #f8f8f8;}
+.playerCard a {color: #ff9900; text-decoration none;}
+.playerCard a:hover {color: #000; text-decoration: none;}
+.playerPosition {width: 150px; float: left;}
+.playerPosition p {font-family: 'MyriadProCondensed', sans-serif; font-weight: bold;}
+.playerPhoto {float: right; width: 430px;}
+.position1, .position2 {font-size: 5.5em; font-weight: bold; border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px; margin: 0 10px 30px 0; padding: 10px 20px; color: #fff; background: #ff9900 url(../../Content/Img/navGradient.jpg) repeat-x bottom center; font-family: Myriad Pro Cond, Gill Sans MT Condensed, sans-serif; font-weight: bold; text-align: center;}
+.playerInfo {width: 300px; float: right; padding: 70px 0 0 0px;}
+.playerInfo strong {font-weight: bold; display: block;}
+
+
+/* html {height:100%; margin-bottom: 1px; } */
+html, body {height: 100%; margin: 0 0 1px; padding: 0;}
+
+
+/********* OFFICIAL COPYRIGHT NOTICE *********/
+.official {width: 1000px; margin: 0 auto; padding: 20px 0 0; color: #a79c73; text-align: center; background: url(../../Content/Img/footerShadow.png) no-repeat bottom left; text-shadow: 1px 1px 1px #f5e7d4;}
+
+/********* Google Maps iframe *********/
+iframe {border: none;}
+
+.overflow { overflow:hidden }
+.overflow { display:inline-block } .overflow { display:block }
+
+/********* Twitter *********/
+#tweet {margin: 0 0 10px 0; background: #02fefb url(../../Content/Img/navStripes.png) no-repeat top right;}
+#tweet ul li {font-weight: normal;}
+#tweet a {color: #2e6b6a;}
+#tweet strong {font-size: 1.2em; margin: 0 10px 0 100px;}
+#tweet strong a {color: #000 !important;}
+.tigerTweet {background: url(../../Content/Img/twitter.png) no-repeat center left; padding: 15px 40px 15px 0;}
+
+/********* TEAM STATS *********/
+.team #main {width: 940px;}
+ul.tabs {float: left; width: 100%; margin-top: 10px; background: url(../../Content/Img/tabsUnderline.jpg) no-repeat bottom center;}
+ul.tabs li {float: left; border: 1px solid #ddd; background: #f8f8f8; line-height: 40px;}
+ul.tabs li a {color: #666; text-transform: uppercase; padding: 10px 20px;}
+
+ul.tabs li.activeTab {background: #fff; border-bottom: 1px solid #fff;}
+ul.tabs li.activeTab a {color: #444;}
+
+#tab1div, #tab2div, #tab3div, #tab4div, #tab5div {clear: both; margin: 20px 0;}
+
+#tabs table {width: 100%; border-collapse: collapse; margin: 0 0 20px;}
+#tabs table tr {}
+#tabs table tr:nth-of-type(odd) {background: #f8f8f8}
+#tabs table tr:hover {background: #f6eddb;}
+#tabs table th, #tabs table td {border: 1px solid #ddd; vertical-align: middle;}
+#tabs table th {text-align: left; padding: 10px; background: #FF9800; color: #fff; text-transform: uppercase;}
+#tabs table td a {color: #444; display: block; text-decoration: none; padding: 10px;}
+#tab1div table td {padding: 10px;}
+
+p.leagueTitle {padding: 20px 0 0; color: #999; font-weight: bold; text-transform: uppercase;}
+
+/********* FORCE VERTICAL SCROLLBAR *********/
+html {overflow-y: scroll;}
+
+/********* TEAM LIST *********/
+.teamList #main {width: 940px;}
+.teamList .item {width: 290px; padding: 0; float: left; border: 1px solid #ddd; background: #fff; border-radius: 10px; margin-right: 20px;}
+.teamList .item img {padding: 20px; position: relative; z-index: 5;}
+.teamList .item .item {width: 250px; padding: 60px 20px 20px; background: #f5f5f5; border: 0; border-radius: 0; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; margin: -60px 0 0;}
+.teamList .item .item h4 {text-align: center; font-size: 1.25em;}
+
+.teamList .item .item p  {color: #444;}
+.teamList .item a:hover .item {background: #eee;}
+.teamList .item .item p strong {display: block; text-transform: uppercase;}
+.teamList .item a:hover {text-decoration: none;}
+
+.navigation select, #matchNav { display: none; }
+#menu-icon {display: none;}
+
+/********* MEDIA QUERIES *********/
+
+@media screen and (max-width: 480px)
+{
+}
+
+@media screen and (max-width: 540px) and (orientation: portrait)
+{
+    /* h1, .matchType, .opponent, h3, h4 {font-family: League Gothic; font-weight: normal;} */
+    .title {font-family: Arial;}
+    
+    body {background: #fff;}
+    #wrap, #content, #main, #extras, #footer, .official {width: auto; margin: 0; padding: 0;}
+    
+    .startPage #header {/*background: #000 url(../../Content/Img/headerHome2.jpg) no-repeat center right;*/ overflow: hidden;}
+    
+    #header {padding: 0; margin: 0;}
+    
+    .header .logo {margin: 0; position: relative !important; z-index: 0; display: none; height: 0; width: 0;}
+    /* Select dropdown option
+    .navigation {width: 100%; margin: 0; padding: 10px; background-color: #f90; background-image: -webkit-linear-gradient(top, #ff9800, #ff6700);}
+    .navigation ul { display: none; }
+    .navigation select {display: block; width: 290px; padding: 3px 5px; border: 1px solid #999; border-radius: 3px;}
+    .navigation select option {padding: 3px 5px;}
+    */
+    
+    .navigation {width: 100%; margin: 0; padding: 0; background:#f90 url(../../Content/Img/navStripes.png) no-repeat top right; height: 50px; letter-spacing: 0; }
+    .navigation div#menu-icon {display: inline-block; color: #fff; margin: 7px 10px; padding: 7px 7px 2px; border-radius: 3px; background: #ff9800 url(../../Content/Img/navGradient.jpg) repeat-x top left; border: 1px solid #c77e11; box-shadow: 0 1px 1px #fec46e;}
+    
+    .navigation ul {clear: both; display: none; background:#f90; z-index: 99999; width: 100%; border-radius: 0; padding: 0 0 15px;}
+    .navigation ul li {margin: 0; display: inline; width: 28%; line-height: 36px; padding: 4px 1% 4px 4%; text-align: left;}
+    .navigation ul.topMenu {margin: 0 0 25px; text-transform: none;}
+    .navigation ul.topMenu a {text-shadow: none;}
+    .navigation ul.topMenu a:hover {background: none;}
+    
+    .header h1 {font-size: 2.5em; padding: 20px 10px; margin: 0;}
+    
+    #matchNav {display: inline;}
+    #matchNav ul {margin: 0 10px;}
+    #matchNav ul li {float: left; color: #000; text-align: center; background-color: #f90; background-image: -webkit-linear-gradient(top, #ff9800, #ff6700); border-top-left-radius: 5px; border-top-right-radius: 5px; width: 90px;}
+    #matchNav ul li a {color: #fff; padding: 9px 10px; display: block; text-decoration: none;}
+    
+    #matchNav ul li.activeTab {background: #fff;}
+    #matchNav ul li.activeTab a {color: #444;}
+    
+    .matchHeaderPast, .matchHeaderFuture {margin: 0; width: 100%; padding: 10px 10px 20px; border-bottom: 1px solid #ddd; background: #fff;}
+    .matchHeaderPast .matchType, .matchHeaderFuture .matchType {display: none;}
+    .matchHeaderPast .opponent, .matchHeaderFuture .opponent {margin: 10px 0 0;}
+    .matchHeaderPast .info, .matchHeaderFuture .info {margin: 10px 0 0; color: #000;}
+    .matchHeaderPast .matchLink a, .matchHeaderFuture .matchLink a, p.more a {padding: 7px 15px; background-color: #f90; background-image: -webkit-linear-gradient(top, #ff9800, #ff6700);}
+    p.more {margin: 10px 0 0;}
+    
+    .matchHeaderFuture {width: 100%; border-bottom: 1px solid #ddd; background: #fff; float: left;}
+    
+    .hidden {display: none;}
+    
+    /* Tweets */
+    #tweet {background-image: none; margin: 0; overflow: hidden;}
+    .tigerTweet {padding: 10px 10px 10px 50px; margin: 10px; background: #fff url(../../Content/Img/twitter-mob.png) no-repeat center left; border-radius: 5px;}
+    .tigerTweet strong {display: none;}
+    
+    #page {padding: 0;}
+    
+    /* Content Widths */
+    #main, .columns .left, .columns .right, #extras {margin: 10px auto; padding: 10px; width: auto; float: none; overflow: auto; clear: both; border-bottom: 1px solid #ddd;}
+    body.startPage #main {margin: 0 auto; padding:0; margin: 0; overflow: hidden; border-bottom: 0; width: auto;}
+    #main p iframe {margin: 10px 0; width: 290px; height: 290px;}
+    
+    .playerList #main, .newsContainer #main, .news #main, .calendar #main {padding: 10px 10px 0; width: auto; border-bottom: 0;}
+    
+    /* Secondary Menu */
+    #extras #menu .uc {margin:0; font-family: Arial;}
+    #extras #menu .uc h4 {background: none; padding:0; margin: 0 0 5px; text-transform: none; width: 100%; font-size: .75em; float: left;}
+    #extras #menu .uc h4 a {color: #444;}
+    
+    #extras .secondary .uc .box {background: none; padding: 0; width: auto;}
+    #extras .secondary .uc .box .inner {padding: 0;}
+    #extras .secondary .uc .box .inner ul {clear: both;}
+    #extras .secondary .uc .box .inner ul li {font-size: .75em;}
+    #extras .secondary .uc .box .inner ul li.current a {color: #f90;}
+    
+    /* News and Events Lists */
+    #main .list .item {padding: 5px;}
+    #main .list .a0 {background: #f5f5f5;}
+    #main .list .item p.eventDate {font-size: .7em; font-family: arial; color: #666; font-weight: normal;}
+    #main .list .item p.shortDesc {font-weight: normal; font-style: normal; font-size: .7em;}
+
+    /* Team Lists */
+    .teamList #content {margin: 0 auto; padding:0px; margin: 0; overflow: hidden; border-bottom: 0; width: auto;}
+    .teamList #main {padding: 10px 10px 0; width: auto; border-bottom: 0;}
+    .teamList #main .list h4 {font-size: 1em; text-transform: none; font-family: Arial, Sans-Serif; font-weight: normal; font-size: 1em;}
+    .teamList #main .item {width: 100%; margin: 10px 0 0; padding: 0; background: #f5f5f5;}
+    .teamList #main .item img {float: left; height: 40px; padding: 10px 5px; background: #fff; }
+    .teamList #main .item .item {float: left; border-left: 1px solid #ddd; background: #f5f5f5; width: auto; padding: 10px; margin: 0; border-radius: 0;}
+    .teamList #main .item .item p strong {}
+    .teamList #main .item .item p {display: inline; font-size: .75em;}
+    
+    .teamList .item a:hover .item {background: none;}
+    
+    /* Gallery */
+    .galleryList #matchNav, .galleryList #tweet, .imageGallery #matchNav, .imageGallery #tweet {display: none;}
+    .galleryList #page h3 {display: none;}
+    
+    .galleryList .path, .imageGallery .path {margin: 0 0 10px;}
+    .galleryList .path a, .galleryList .path a.current, .imageGallery .path a, .imageGallery .path a.current {border: 1px solid #000;}
+    .galleryList .path a:hover, .galleryList .path a.current:hover, .imageGallery .path a:hover, .imageGallery .path a.current:hover {color: #fff; background: none;}
+    
+    .galleryList .galleryHome img {width: 45px; margin: 0px 5px 10px 0;} 
+    
+    /* Players */
+    body.player #content {margin: 0 auto; padding: 10px; overflow: hidden; border-bottom: 0; width: auto;}
+    body.player #main {margin: 0 auto; padding: 0px; overflow: hidden; border-bottom: 0; width: auto;}
+    .playerPhoto {float: none; width: auto;}
+    .playerPosition {width: auto;}
+    .playerPosition div {width: 48%; margin: 0 2% 0 0; float: left;}
+    .playerInfo {padding: 0;}
+    
+    /* Fixtures and Results */
+    body.team #main {margin: 0; padding: 10px; overflow: hidden; border-bottom: 0; width: auto;}
+
+    body.fixture #main {border: none;}
+    #tabs ul.tabs li {width: 15%; line-height: 150%; text-align: left; font-size: .75em; padding: 4px; height: 36px;}
+    #tabs ul.tabs li a {text-transform: none; padding: 0px;}
+ 
+     #tabs table {width: auto;}
+     #tabs table th, #tabs table td a {padding: 3px 5px;}
+     #tabs table td {font-size: .75em;}
+    
+    /* Crumbtrail */
+    div.path {color: #fff;}
+    div.path p {line-height: 300%;}
+    div.path a, div.path a.current {color: #999; text-decoration: none; padding: 4px 6px; border: 1px solid #ddd; display: inline; border-radius: 2px;}
+    div.path a:hover, div.path a.current:hover, div.path a:focus, div.path a.current:focus {background: #eee;}
+    
+    .title {font-size: 1em; text-transform: none;}
+    .secondary .uc {margin: 0;}
+    p {color: #444;}    
+    
+    h3, h4 {font-size: 1.5em; color: #000;}
+    
+    #footer {padding: 20px 0;}
+    #footer h4 {padding: 0 10px;}
+    
+    .official {background-image: none; background: #eee;}
+    .official p {padding: 10px 0; font-size: .8em; color: #999;}
+    
+    /* Hiding content */
+    body.textPage #matchNav, body.textPage .matchHeaderPast, body.textPage .matchHeaderFuture, body.textPage #tweet {display: none;}
+    body.newsContainer #matchNav, body.newsContainer .matchHeaderPast, body.newsContainer .matchHeaderFuture, body.newsContainer #tweet {display: none;}
+    body.news #matchNav, body.news .matchHeaderPast, body.news .matchHeaderFuture, body.news #tweet {display: none;}
+    body.calendar #matchNav, body.calendar .matchHeaderPast, body.calendar .matchHeaderFuture, body.calendar #tweet {display: none;}
+    body.event #matchNav, body.event .matchHeaderPast, body.event .matchHeaderFuture, body.event #tweet {display: none;}
+    body.playerList #matchNav, body.playerList .matchHeaderPast, body.playerList .matchHeaderFuture, body.playerList #tweet {display: none;}
+    body.player #matchNav, body.player .matchHeaderPast, body.player .matchHeaderFuture, body.player #tweet {display: none;}
+    body.fixture #matchNav, body.fixture .matchHeaderPast, body.fixture .matchHeaderFuture, body.fixture #tweet {display: none;}
+}
+
+/*** Iphone 4 - needs some width info  ***/
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+
+}

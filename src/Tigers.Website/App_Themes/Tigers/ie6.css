@@ -1,0 +1,20 @@
+﻿/* IE6 Stylesheet */
+
+body {}
+
+.logo {margin: 0 0 0 400px; /* IE6&7 Fix */}
+
+.topMenu a:hover {background: url(../../Content/Img/navStripes.jpg) no-repeat top right;}
+
+.home { background: none;}
+
+/* Fonts */
+
+h1 {padding: 55px 0 0 40px; }
+
+#header {overflow: auto; padding: 0 0 160px 0;}
+
+.matchHeaderPast, .matchHeaderFuture {padding: 0 0 20px 0;}
+.matchHeaderPast, .matchHeaderFuture {display: inline;}
+
+#extras {margin: 10px 0 0;}

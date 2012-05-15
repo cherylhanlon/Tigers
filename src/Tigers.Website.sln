@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tigers.Website", "Tigers.Website\Tigers.Website.csproj", "{92022CD3-9BDC-4E5B-BB9D-2D47531BEBF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N2.Management", "Tigers.Website\N2.Management.csproj", "{10F7C179-B92D-4FCA-B78C-011E428D0CA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Demo|Any CPU = Demo|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92022CD3-9BDC-4E5B-BB9D-2D47531BEBF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92022CD3-9BDC-4E5B-BB9D-2D47531BEBF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92022CD3-9BDC-4E5B-BB9D-2D47531BEBF1}.Demo|Any CPU.ActiveCfg = Demo|Any CPU
+		{92022CD3-9BDC-4E5B-BB9D-2D47531BEBF1}.Demo|Any CPU.Build.0 = Demo|Any CPU
+		{92022CD3-9BDC-4E5B-BB9D-2D47531BEBF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92022CD3-9BDC-4E5B-BB9D-2D47531BEBF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10F7C179-B92D-4FCA-B78C-011E428D0CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10F7C179-B92D-4FCA-B78C-011E428D0CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10F7C179-B92D-4FCA-B78C-011E428D0CA3}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{10F7C179-B92D-4FCA-B78C-011E428D0CA3}.Demo|Any CPU.Build.0 = Debug|Any CPU
+		{10F7C179-B92D-4FCA-B78C-011E428D0CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10F7C179-B92D-4FCA-B78C-011E428D0CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

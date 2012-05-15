@@ -1,0 +1,6 @@
+2010-08-27 15:58:53,852 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License C:\Users\cheryl.hanlon\AppData\Local\NHibernate Profiler\license.xml expiration date is 12/31/9999 23:59:59
+2010-08-27 15:58:53,898 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2010-08-27 16:00:18,362 [1] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2010-08-27 16:00:18,479 [1] DEBUG Rhino.Licensing.LicenseValidator [(null)] - License accepted for NHibernate Profiler
+2010-08-27 16:05:18,407 [3] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59
+2010-08-27 16:10:18,433 [13] INFO  Rhino.Licensing.LicenseValidator [(null)] - License expiration date is 12/31/9999 23:59:59

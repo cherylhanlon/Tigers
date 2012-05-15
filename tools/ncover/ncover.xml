@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="coverage.xsl" type="text/xsl"?>
+<!-- saved from url=(0022)http://www.ncover.org/ -->
+<coverage profilerVersion="1.5.8 Beta" driverVersion="1.5.8.0" startTime="2007-07-02T22:31:39.625+01:00" measureTime="2007-07-02T22:31:40.703125+01:00">
+  <module moduleId="18" name="C:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\bin\Debug\Connect4.Core.dll" assembly="Connect4.Core" assemblyIdentity="Connect4.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b3e409a54bce8d73, processorArchitecture=MSIL">
+    <method name=".ctor" excluded="false" instrumented="true" class="Connect4.Core.Board">
+      <seqpnt visitcount="2" line="9" column="9" endline="9" endcolumn="48" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+      <seqpnt visitcount="2" line="10" column="9" endline="10" endcolumn="51" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+      <seqpnt visitcount="2" line="12" column="9" endline="12" endcolumn="43" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+      <seqpnt visitcount="2" line="15" column="9" endline="15" endcolumn="44" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+      <seqpnt visitcount="2" line="17" column="13" endline="17" endcolumn="34" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+      <seqpnt visitcount="2" line="18" column="13" endline="18" endcolumn="40" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+      <seqpnt visitcount="2" line="19" column="13" endline="19" endcolumn="56" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+      <seqpnt visitcount="2" line="20" column="9" endline="20" endcolumn="10" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+    </method>
+    <method name="get_Rows" excluded="false" instrumented="true" class="Connect4.Core.Board">
+      <seqpnt visitcount="0" line="24" column="19" endline="24" endcolumn="40" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+      <seqpnt visitcount="0" line="24" column="41" endline="24" endcolumn="42" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+    </method>
+    <method name="get_Columns" excluded="false" instrumented="true" class="Connect4.Core.Board">
+      <seqpnt visitcount="2" line="29" column="19" endline="29" endcolumn="41" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+      <seqpnt visitcount="2" line="29" column="42" endline="29" endcolumn="43" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+    </method>
+    <method name="AddPlayingToken" excluded="false" instrumented="true" class="Connect4.Core.Board">
+      <seqpnt visitcount="0" line="34" column="13" endline="34" endcolumn="77" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+    </method>
+    <method name="ColumnTokenCount" excluded="false" instrumented="true" class="Connect4.Core.Board">
+      <seqpnt visitcount="0" line="39" column="13" endline="39" endcolumn="81" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Board.cs" />
+    </method>
+    <method name=".ctor" excluded="false" instrumented="false" class="Connect4.Core.Column`1">
+      <seqpnt visitcount="0" line="12" column="9" endline="12" endcolumn="32" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Column.cs" />
+      <seqpnt visitcount="0" line="13" column="9" endline="13" endcolumn="10" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Column.cs" />
+      <seqpnt visitcount="0" line="14" column="13" endline="14" endcolumn="26" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Column.cs" />
+      <seqpnt visitcount="0" line="15" column="9" endline="15" endcolumn="10" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Core\Column.cs" />
+    </method>
+  </module>
+  <module moduleId="13" name="C:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\bin\Debug\Connect4.Tests.dll" assembly="Connect4.Tests" assemblyIdentity="Connect4.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b3e409a54bce8d73, processorArchitecture=MSIL">
+    <method name=".ctor" excluded="false" instrumented="true" class="Connect4.Tests.BoardTest">
+      <seqpnt visitcount="1" line="15" column="9" endline="15" endcolumn="36" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+    </method>
+    <method name="BoardCreatesProperly" excluded="false" instrumented="true" class="Connect4.Tests.BoardTest">
+      <seqpnt visitcount="1" line="20" column="13" endline="20" endcolumn="36" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+      <seqpnt visitcount="1" line="21" column="13" endline="21" endcolumn="47" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+      <seqpnt visitcount="0" line="22" column="13" endline="22" endcolumn="44" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+      <seqpnt visitcount="0" line="23" column="9" endline="23" endcolumn="10" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+    </method>
+    <method name="CanAddPlayingTokenToEachColumn" excluded="false" instrumented="true" class="Connect4.Tests.BoardTest">
+      <seqpnt visitcount="1" line="28" column="13" endline="28" endcolumn="36" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+      <seqpnt visitcount="1" line="29" column="18" endline="29" endcolumn="28" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+      <seqpnt visitcount="0" line="31" column="17" endline="31" endcolumn="63" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+      <seqpnt visitcount="0" line="32" column="17" endline="32" endcolumn="42" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+      <seqpnt visitcount="0" line="33" column="17" endline="33" endcolumn="63" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+      <seqpnt visitcount="0" line="29" column="49" endline="29" endcolumn="52" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+      <seqpnt visitcount="1" line="29" column="29" endline="29" endcolumn="47" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+      <seqpnt visitcount="1" line="35" column="9" endline="35" endcolumn="10" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\BoardTest.cs" />
+    </method>
+    <method name="TestColumCreated" excluded="false" instrumented="true" class="Connect4.Tests.ColumnTest">
+      <seqpnt visitcount="1" line="18" column="9" endline="18" endcolumn="10" excluded="false" document="c:\Documents and Settings\James\Desktop\jklh\Connect4.Tests\ColumnTest.cs" />
+    </method>
+  </module>
+</coverage>

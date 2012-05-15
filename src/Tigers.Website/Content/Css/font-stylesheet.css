@@ -1,0 +1,13 @@
+/* Updated @font-face syntax from - http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax */
+
+@font-face {
+	font-family: 'MyriadProCondensed';
+	src: url('myriadpro-cond-webfont.eot'); /* IE9 Compat Modes */
+	src: url('myriadpro-cond-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('myriadpro-cond-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('myriadpro-cond-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('myriadpro-cond-webfont.svg#webfontYxV98RXi') format('svg'); /* Legacy iOS */
+		font-weight: normal;
+	    font-style: normal;
+	}
+

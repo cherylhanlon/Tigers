@@ -1,0 +1,2 @@
+powershell -ExecutionPolicy Unrestricted -Command "& {Import-Module .\tools\psake\psake.psm1; Invoke-psake .\psake-common.ps1 FullBuild -parameters @{'environment'='development';'verbosity'='quiet'} }"
+PAUSE

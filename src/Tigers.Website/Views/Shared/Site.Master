@@ -1,0 +1,169 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="N2.Templates.Mvc.Views.Shared.Site" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title></title>
+	<asp:PlaceHolder runat="server">
+	
+		<link href="<%=ResolveUrl("~/App_Themes/" + (Start != null ? Start.Theme : "Default") + "/Style.css")%>" type="text/css" rel="stylesheet" />
+	    <link href="<%=ResolveUrl("~/Content/Css/font-stylesheet.css")%>" rel="stylesheet" type="text/css"/>
+	    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.3/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>    
+	    <!-- <script src="<%=ResolveUrl("~/Content/Scripts/responsiveMenu.js")%>" type="text/javascript"></script> -->
+	    
+	    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	    
+	    <script type="text/javascript">
+	        jQuery(document).ready(function($) {
+
+	            /* prepend menu icon */
+	            $('.navigation').prepend('<div id="menu-icon"><img src="<%=ResolveUrl("~/Content/Img/menu.png")%>" alt="Menu Icon"></div>');
+
+	            /* toggle nav */
+	            $("#menu-icon").on("click", function() {
+	                $(".topMenu").slideToggle();
+	                $(this).toggleClass("active");
+	            });
+
+	        });
+        </script>
+	    
+	    <!--
+	    <script type="text/javascript">
+	        $(".navigation select").change(function() {
+	            window.location = $(this).find("option:selected").val();
+	        });
+	    </script>
+	    -->
+	        <!--[if IE 6]>
+                <link rel="stylesheet" type="text/css" href="<%=ResolveUrl("~/App_Themes/" + Find.ClosestStartPage.Theme + "/ie6.css")%>" rel="stylesheet" media="screen" />
+                <script src="<%=ResolveUrl("~/Content/Scripts/jquery-1.3.2.min.js")%>" type="text/javascript"></script>
+                <script src="<%=ResolveUrl("~/Content/Scripts/jquery.pngFix.min.js")%>" type="text/javascript"></script>
+                <script type="text/javascript"> 
+                    $(document).ready(function(){ 
+                        $(document).pngFix(); 
+                    }); 
+                </script>
+            <![endif]-->
+	        <!--[if IE 7]>
+                <link rel="stylesheet" type="text/css" href="<%=ResolveUrl("~/App_Themes/" + Find.ClosestStartPage.Theme + "/ie7.css")%>" rel="stylesheet" media="screen" />
+            <![endif]-->
+	        <!--[if IE 8]>
+                <link rel="stylesheet" type="text/css" href="<%=ResolveUrl("~/App_Themes/" + Find.ClosestStartPage.Theme + "/ie8.css")%>" rel="stylesheet" media="screen" />
+            <![endif]-->
+		<link rel="canonical" href="<%= Html.CurrentPage() != null ? Html.CurrentPage().Url : Request.RawUrl %>" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	</asp:PlaceHolder>
+	<asp:ContentPlaceHolder ID="Head" runat="server" />
+	
+</head>
+<body class="<%= GetBodyClass() %>">
+	<n2:SlidingCurtain ID="sc" runat="server">
+		<n2:ControlPanel ID="cp" runat="server"/>
+	</n2:SlidingCurtain>
+	<div id="wrap">
+		<asp:ContentPlaceHolder ID="Top" runat="server">
+			<div id="header">
+			    <div class="header overflow">
+			        <div class="logo">
+				        <%= Html.DisplayContent(Start, p => p.Header) %>
+				    </div>
+                    <div class="navigation">
+				        <% Html.RenderAction("TopMenu", "Navigation", new { area = "" }); %>
+				    </div>
+				    <h1>TIGERS<span class="contrast">NETBALLCLUB</span></h1>
+				    <% Html.DroppableZone(Language, Zones.SiteTop).Render();%>
+			    </div>
+			</div>
+			
+		    <div id="tweet">
+		        <p>Please wait while our tweets load  - <a href="http://twitter.com/TigersNC">If you can't wait - check out what we've been twittering</a></p>
+		    </div>
+			
+		</asp:ContentPlaceHolder>
+		<asp:ContentPlaceHolder ID="PageWrapper" runat="server">
+			<div id="page" class="cf">
+				<asp:ContentPlaceHolder ID="PageTop" runat="server">
+					<%=Html.DisplayContent("TopImage").SwallowExceptions()%>
+				</asp:ContentPlaceHolder>
+				<asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+				<div id="content" class="">
+					<asp:ContentPlaceHolder ID="ContentAndSidebar" runat="server">
+						<div id="main" class="overflow">
+						
+						    <asp:ContentPlaceHolder ID="Menu" runat="server">
+						            
+						            <!-- Subnav was here -->
+						            
+						            <% Html.DroppableZone(Language, Zones.SiteLeft)
+                                        .Render();%>
+						            <% Html.DroppableZone(Zones.Left)
+                                        .Render();%>
+						            <% Html.DroppableZone(Zones.RecursiveLeft)
+                                        .Render();%>
+				            </asp:ContentPlaceHolder>
+				            
+							<asp:ContentPlaceHolder ID="PreContent" runat="server">
+								<% Html.DroppableZone(Zones.RecursiveAbove).Render();%>
+							</asp:ContentPlaceHolder>
+							<asp:ContentPlaceHolder ID="Content" runat="server">
+								<% Html.RenderAction<NavigationController>(c => c.Breadcrumb()); %>
+								<%=Html.DisplayContent("Image").SwallowExceptions()%>
+								<asp:ContentPlaceHolder ID="TextContent" runat="server">
+									<% if (Html.ValueEquals("ShowTitle", true)) { %>
+									<%= Html.DisplayContent("Title").SwallowExceptions()%>
+									<% } %>
+									<%=Html.DisplayContent("Text").SwallowExceptions()%>
+								</asp:ContentPlaceHolder>
+							</asp:ContentPlaceHolder>
+							<asp:ContentPlaceHolder ID="PostContent" runat="server">
+								<% Html.DroppableZone(Zones.Content).Render();%>
+								<% Html.DroppableZone(Zones.RecursiveBelow).Render();%>
+							</asp:ContentPlaceHolder>
+						</div>
+						<asp:ContentPlaceHolder ID="Sidebar" runat="server">
+							<div id="extras" class="secondary">
+							
+							    <% Html.RenderAction("SubMenu", "Navigation", new { area = "" }); %>
+							
+								<% Html.DroppableZone(Zones.RecursiveRight)
+                                    .Render();%>
+								<% Html.DroppableZone(Zones.Right)
+                                    .Render();%>
+								<% Html.DroppableZone(Language, Zones.SiteRight)
+                                    .Render();%>
+							</div>
+						</asp:ContentPlaceHolder>
+					</asp:ContentPlaceHolder>
+				</div>
+				</asp:ContentPlaceHolder>
+			</div>
+			<div id="footer">
+				<!-- <a class="n2" title="N2 Open Source ASP.NET CMS" href="http://n2cms.com/">powered by n2 cms</a> -->
+				<%=Html.DisplayContent(Language, p => p.FooterText)%>
+			</div>
+		</asp:ContentPlaceHolder>
+	</div>
+	<div class="official">
+	    <p>All content copyright &copy; <strong>Tigers Netball</strong> 2012</p>
+	</div>
+	<% Html.DroppableZone(Zones.SiteBottom).Render();%>
+
+<script  src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8">
+    getTwitters('tweet', {
+        id: 'TigersNC',
+        count: 1,
+        enableLinks: true,
+        ignoreReplies: true,
+        clearContents: true,
+        newwindow: true,
+        template: ' <div class="tigerTweet"><strong><a href="http://twitter.com/TigersNC" target="_blank">TIGER TWEETS...</a></strong> "%text%" <a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/" target="_blank">%time%</a></div>'
+    });
+</script>
+
+</body>
+</html>
