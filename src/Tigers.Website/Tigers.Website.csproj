@@ -181,6 +181,7 @@
     <Compile Include="Areas\Tests\Views\Forms\TestWebFormPart.ascx.designer.cs">
       <DependentUpon>TestWebFormPart.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\GalleryListController.cs" />
     <Compile Include="Controllers\RedirectToUrlController.cs" />
     <Compile Include="Details\LeagueDropDownAttribute.cs" />
@@ -317,7 +318,6 @@
     <Compile Include="Models\SubMenuModel.cs" />
     <Compile Include="Models\TopMenuModel.cs" />
     <Compile Include="Models\UserRegistrationModel.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\NotFoundHandler.cs" />
     <Compile Include="Services\PermissionDeniedHandler.cs" />
     <Compile Include="Services\SeoDefinitionAppender.cs" />

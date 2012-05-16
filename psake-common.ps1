@@ -51,7 +51,7 @@ properties { #Deployment
 }
 
 properties { # Files
-    $sln_file = "$src_dir\$project_name.sln" 
+    $sln_file = "$src_dir\AppHarbor.sln" 
 }
 
 properties { # Projects
